@@ -57,6 +57,9 @@ We can use third-party PDF libraries to embed a PDF file. It has the following b
 3. We can use more features like PDF annotation and PDF editing.
 4. We can prevent the PDF file from being downloaded for security.
 
+
+Of course, since the rendering happens on the client side, it has higher requirments for the client.
+
 There are several libraries to use:
 
 1. PDF.js. ([online demo](https://tony-xlh.github.io/Embed-PDF-in-HTML/pdfjs.html))
