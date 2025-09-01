@@ -45,7 +45,7 @@ We can use libraries like Apache PDFBox to convert PDF files to images or use pd
 
 Converting to images produces either blurred text or monster sized files/network cost. Also, text are logically lost, readers cannot perform searching or copying.
 
-Converting to HTML is better. It can make viewer PDF just like viewing a normal web page. But if you need to edit and annotate the PDF, it is not possible. ([the converted version](https://tony-xlh.github.io/Embed-PDF-in-HTML/ddv-sample.html))
+Converting to HTML is better. It can make viewing PDF just like viewing a normal web page. But if you need to edit and annotate the PDF, it is not possible. ([the converted version](https://tony-xlh.github.io/Embed-PDF-in-HTML/ddv-sample.html))
 
 
 ## Use PDF JavaScript Libraries to Embed a PDF File
