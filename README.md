@@ -39,7 +39,16 @@ Demos embedding PDF files in HTML.
 
 On the desktop, the browser's built-in PDF viewer will be used to open the PDF using the three tags. While on the mobile browsers, the behavior varies. On Android, the browsers will give a download link. On iOS, the browsers will render the first page of the PDF.
 
-## Use PDF Libraries to Embed a PDF File
+## Convert the PDF to Images or HTML for Embedding
+
+We can use libraries like Apache PDFBox to convert PDF files to images or use pdf2htmlex to convert them to HTML beforehand to embed the PDF in HTML.
+
+Converting to images produces either blurred text or monster sized files/network cost. Also, text are logically lost, readers cannot perform searching or copying.
+
+Converting to HTML is better. But if you need to edit and annotate the PDF, it is not possible.
+
+
+## Use PDF JavaScript Libraries to Embed a PDF File
 
 We can use third-party PDF libraries to embed a PDF file. It has the following benefits:
 
@@ -52,7 +61,13 @@ There are several libraries to use:
 
 1. PDF.js. ([online demo](https://tony-xlh.github.io/Embed-PDF-in-HTML/pdfjs.html))
 2. PDFium.js. ([online demo](https://tony-xlh.github.io/Embed-PDF-in-HTML/pdfium.html))
-3. Dynamsoft Document Viewer. ([online demo](https://tony-xlh.github.io/Embed-PDF-in-HTML/dynamsoft-document-viewer.html))
+
+[PDF.js](https://github.com/mozilla/pdf.js/) and [PDFium.js](https://github.com/Jaewoook/pdfium.js/) provides PDF rendering functions, but they do not have a decent viewer.
+
+[Dynamsoft Document Viewer](https://www.dynamsoft.com/document-viewer/overview/) uses PDFium as the engine and provides full-featured UI to view and edit PDFs. It is the more recommended library to use.
+
+[Online demo using Dynamsoft Document Viewer](https://tony-xlh.github.io/Embed-PDF-in-HTML/dynamsoft-document-viewer.html)
 
 
-[PDF.js](https://github.com/mozilla/pdf.js/) and [PDFium.js](https://github.com/Jaewoook/pdfium.js/) provides PDF rendering functions, but they do not have a decent viewer. [Dynamsoft Document Viewer](https://www.dynamsoft.com/document-viewer/overview/) uses PDFium as the engine and provides full-featured UI to view and edit PDFs. It is the more recommended library to use.
+
+
